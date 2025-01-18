@@ -1,2 +1,1 @@
-# manage_infra
-managing infra 
+This repository is designed to manage infrastructure using Terraform in combination with GitLab CI/CD. It automates the provisioning, updating, and decommissioning of resources on cloud providers such as AWS
