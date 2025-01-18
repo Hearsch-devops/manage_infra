@@ -1,0 +1,15 @@
+stages:
+  - terraform-stage
+
+terraform-job:
+  stage: terraform-stage
+  tags:
+    - ec2
+    - infra
+    - test
+  before_script:
+   - terraform -v
+  script:
+   - terraform init 
+   - terraform plan
+   - terraform apply --auto-approve
