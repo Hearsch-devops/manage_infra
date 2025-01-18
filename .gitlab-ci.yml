@@ -3,6 +3,7 @@ stages:
 
 terraform-job:
   stage: terraform-stage
+  # used AWS ec2 instance as runner for gitlab runner 
   tags:
     - ec2
     - infra
